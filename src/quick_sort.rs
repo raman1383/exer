@@ -30,7 +30,7 @@ fn _quick_sort<T: Ord>(arr: &mut [T], lo: isize, hi: isize) -> &mut [T] {
     arr
 }
 
-pub fn quick_sort<T: Ord>(arr: &mut [T]) -> &mut [T] {G
+pub fn quick_sort<T: Ord>(arr: &mut [T]) -> &mut [T] {
     let len = arr.len();
     _quick_sort(arr, 0, (len - 1) as isize)
 }
