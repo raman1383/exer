@@ -1,4 +1,4 @@
-pub fn partition<T: PartialOrd>(arr: &mut [T], lo: isize, hi: isize) -> isize {
+fn partition<T: PartialOrd>(arr: &mut [T], lo: isize, hi: isize) -> isize {
     let pivot = hi as usize;
     let mut i = lo - 1;
     let mut j = hi;
@@ -21,7 +21,7 @@ pub fn partition<T: PartialOrd>(arr: &mut [T], lo: isize, hi: isize) -> isize {
     i
 }
 
-pub fn _quick_sort<T: Ord>(arr: &mut [T], lo: isize, hi: isize) -> &mut [T] {
+fn _quick_sort<T: Ord>(arr: &mut [T], lo: isize, hi: isize) -> &mut [T] {
     if lo < hi {
         let pivot_point = partition(arr, lo, hi);
         _quick_sort(arr, lo, pivot_point - 1);
@@ -30,7 +30,7 @@ pub fn _quick_sort<T: Ord>(arr: &mut [T], lo: isize, hi: isize) -> &mut [T] {
     arr
 }
 
-pub fn quick_sort<T: Ord>(arr: &mut [T]) -> &mut [T] {
+pub fn quick_sort<T: Ord>(arr: &mut [T]) -> &mut [T] {G
     let len = arr.len();
     _quick_sort(arr, 0, (len - 1) as isize)
 }
