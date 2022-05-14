@@ -3,8 +3,10 @@
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
+
+const PI: f32 = 3.1415;
+
 fn main() {
-    const PI: f32 = 3.1415;
     println!("guess a number...");
     let secret_number = rand::thread_rng().gen_range(1..101);
     print!("Now, Enter youe guess: \n");
@@ -21,9 +23,7 @@ fn main() {
             Ordering::Greater => println!("come lower..."),
             Ordering::Less => println!("go higher..."),
             Ordering::Equal => {
-                println!("😍😍😍😍😍😍😍😍");
-                println!("    You Win      ");
-                println!("😍😍😍😍😍😍😍😍");
+                println!("✌️ You Win ✌️");
                 break;
             }
         }
