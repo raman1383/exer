@@ -36,7 +36,6 @@ pub fn quick_sort<T: Ord>(arr: &mut [T]) -> &mut [T] {
 }
 
 // Binary search
-
 pub fn binary_search(arr: &[i32], length: usize, target: &i32) -> Option<usize> {
     let mut low = 0;
     let mut high = length - 1;
