@@ -1,10 +1,6 @@
-#![allow(unused)]
-
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
-
-const PI: f32 = 3.1415;
 
 fn main() {
     println!("guess a number...");
