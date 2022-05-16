@@ -24,4 +24,17 @@ fn main() {
             }
         }
     }
+
+    let tuple = (12, 4, 54, 77);
+    let array = [12, 33, 44, 5, 67];
+    let vec = vec![12, 3, 44, 55, 77, 23];
+
+    let tuple_2 = tuple;
+    println!("tuple -> {:?}, tuple_2 -> {:?}", tuple, tuple_2);
+
+    let array_2 = array;
+    println!("array_2 -> {:?}, array -> {:?}", array_2, array);
+
+    let vec_2 = vec;r
+    println!("vec_2 -> {:?}, vec -> {:?}", vec_2, vec);
 }
