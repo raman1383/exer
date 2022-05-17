@@ -11,6 +11,13 @@ fn main() {
     let _stt = st;
     // println!("{}{}", st,stt);
     let _tup = ("w", 22u8, String::from("_"), false);
+
+    let person_1 = Person {
+        name: String::from("lana"),
+        age: 27,
+        alive: true,
+    };
+    println!("{}--{}--{}",person_1.name, person_1.age, person_1.alive)
 }
 
 fn first_word(s: &String) -> &str {
@@ -21,4 +28,10 @@ fn first_word(s: &String) -> &str {
         }
     }
     &s[..]
+}
+
+struct Person {
+    name: String,
+    age: u8,
+    alive: bool,
 }
