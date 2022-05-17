@@ -12,18 +12,22 @@ fn main() {
     // println!("{}{}", st,stt);
     let _tup = ("w", 22u8, String::from("_"), false);
 
+    // {
     let person_1 = Person {
         name: String::from("lana"),
         age: 27,
         alive: true,
     };
     println!("{}--{}--{}", person_1.name, person_1.age, person_1.alive);
+    // }
 
     let person_2 = Person {
         name: "mia".to_string(),
         ..person_1
     };
+
     println!("{}--{}--{}", person_2.name, person_2.age, person_2.alive);
+    println!("{:#?}", person_2)
 }
 
 fn first_word(s: &String) -> &str {
@@ -36,6 +40,7 @@ fn first_word(s: &String) -> &str {
     &s[..]
 }
 
+#[derive(Debug)]
 struct Person {
     name: String,
     age: u8,

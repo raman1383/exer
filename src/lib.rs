@@ -80,7 +80,7 @@ mod test {
 // fn main() {
 //     println!("guess a number...");
 //     let secret_number = rand::thread_rng().gen_range(1..101);
-//     print!("Now, Enter youe guess: \n");
+//     print!("Now, Enter you guess: \n");
 //     loop {
 //         let mut guess = String::new();
 //         io::stdin()
