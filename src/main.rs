@@ -10,6 +10,7 @@ fn main() {
     let st = String::from("hello "); // heaped
     let _stt = st;
     // println!("{}{}", st,stt);
+    let _tup = ("w", 22u8, String::from("_"), false);
 }
 
 fn first_word(s: &String) -> &str {
