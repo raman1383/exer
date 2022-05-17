@@ -17,7 +17,13 @@ fn main() {
         age: 27,
         alive: true,
     };
-    println!("{}--{}--{}",person_1.name, person_1.age, person_1.alive)
+    println!("{}--{}--{}", person_1.name, person_1.age, person_1.alive);
+
+    let person_2 = Person {
+        name: "mia".to_string(),
+        ..person_1
+    };
+    println!("{}--{}--{}", person_2.name, person_2.age, person_2.alive);
 }
 
 fn first_word(s: &String) -> &str {
