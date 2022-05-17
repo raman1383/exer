@@ -30,6 +30,11 @@ fn main() {
 
     let person_3 = Person::new("alexis".to_string(), 33, true);
     println!("{:#?}", &person_3);
+
+    let x: i8 = 5;
+    let y: Option<i8> = Some(5);
+    let sum = x + y.unwrap();
+    println!("{sum}")
 }
 
 fn first_word(s: &String) -> &str {
