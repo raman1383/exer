@@ -18,7 +18,7 @@ fn main() {
         age: 27,
         alive: true,
     };
-    println!("{}--{}--{}", person_1.name, person_1.age, person_1.alive);
+    println!("{:#?}", person_1);
     // }
 
     let person_2 = Person {
@@ -26,8 +26,10 @@ fn main() {
         ..person_1
     };
 
-    println!("{}--{}--{}", person_2.name, person_2.age, person_2.alive);
-    println!("{:#?}", person_2)
+    println!("{:#?}", person_2);
+
+    let person_3 = Person::new("alexis".to_string(), 33, true);
+    println!("{:#?}", &person_3);
 }
 
 fn first_word(s: &String) -> &str {
@@ -41,8 +43,14 @@ fn first_word(s: &String) -> &str {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Person {
     name: String,
     age: u8,
     alive: bool,
+}
+impl Person {
+    fn new(name: String, age: u8, alive: bool) -> Person {
+        Person { name, age, alive }
+    }
 }
