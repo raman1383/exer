@@ -1,3 +1,3 @@
 fn main() {
-    println!("Vim makes you code your dreams faster");
+    println!("Hello, world")
 }
