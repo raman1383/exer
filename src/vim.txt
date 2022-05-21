@@ -1,0 +1,2 @@
+I am going to practice vim in this text file.
+vim is amazing... with it I can code my dreams faster.
