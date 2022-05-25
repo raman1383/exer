@@ -103,11 +103,20 @@ pub fn coin_change(coins: &[usize], amount: usize) -> Option<usize> {
     }
 }
 
-pub fn two_sum() {}
-
+pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    let mut hash_map = HashMap::<i32, i32>::new();
+    for (i, num) in nums.iter().enumerate() {
+        match hash_map.get(num) {
+            Some(&index) => return vec![index, i as i32],
+            None => hash_map.insert(target - num, i as i32),
+        };
+    }
+    vec![]
+}
 #[cfg(test)]
 mod test {
     use crate::*;
+
     #[test]
     fn bin_search() {
         assert_eq!(Some(3), binary_search(&mut [12, 3, 2, 46, 7, 8], 7, &46));
@@ -133,5 +142,10 @@ mod test {
         // 119 = 11 * 10 + 7 * 1 + 2 * 1
         let coins = vec![2, 3, 5, 7, 11];
         assert_eq!(Some(12), coin_change(&coins, 119));
+    }
+
+    #[test]
+    fn test_two_sum() {
+        assert_eq!(two_sum(vec![12, 12, 444, 3, 1], 24), vec![0, 1]);
     }
 }
