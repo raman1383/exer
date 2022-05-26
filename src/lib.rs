@@ -4,12 +4,12 @@ mod test {
     use crate::*;
 
     #[test]
-    fn test_contains_duplicate() {
+    fn test() {
         assert_eq!(
-            arrays::contains_duplicate::contains_duplicate::_contains_duplicate(&vec![
-                22, 34, 55, 55
+            arrays::maximum_subarray::maximum_subarray::_max_sub_array(vec![
+                -2,1,-3,4,-1,2,1,-5,4
             ]),
-            true
+            6
         )
     }
 }
