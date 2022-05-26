@@ -1,5 +1,0 @@
-I am going to practice vim in this text file.
-vim is amazing... with it I can code my dreams faster.
-I will build the first part of the puzzle(re-creator neural nets) to get into silicon valley, 
-FAANG(promise them but never deliver, make them spend their resources to develop your ALLnet),
-start your own company then act like steve jobs to attract talents, 
