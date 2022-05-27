@@ -1,16 +1,27 @@
 use std::collections::HashMap;
+
+mod arrays;
 fn main() {
     let mut hm = HashMap::new();
     hm.insert(11, "eleven");
     hm.insert(22, "twelve");
 
-    let vec = vec![12, 44, 54, 87, 5];
+    println!(
+        "{:?}",
+        &hm.get_key_value(&33).get_or_insert((&33, &"thirteen"))
+    );
 
-    for (i, num) in hm.iter().enumerate() {
-        println!("-> {:?},{:?} <--", i, num)
-    }
-    for (i, num) in vec.iter().enumerate() {
-        println!("-> {:?},{:?} <-", i, num)
-    }
+    let a = "b";
+    println!("{:?}", a.as_bytes());
 
+    println!(
+        "{:?}",
+        arrays::group_anagram::group_anagram::_group_anagrams(vec![
+            "ant".to_string(),
+            "tan".to_string(),
+            "do".to_string(),
+            "od".to_string(),
+            "ran".to_string()
+        ])
+    )
 }
