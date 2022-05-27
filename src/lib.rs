@@ -19,22 +19,22 @@ mod test {
         assert_eq!(vec![1, 2], arrays::two_sum::two_sum::_two_sum(nums, 20))
     }
 
-    #[test]
-    fn test_group_anagram() {
-        assert_eq!(
-            arrays::group_anagram::group_anagram::_group_anagrams(vec![
-                "eat".to_string(),
-                "tea".to_string(),
-                "tan".to_string(),
-                "ate".to_string(),
-                "nat".to_string(),
-                "bat".to_string()
-            ]),
-            vec![
-                vec!["bat".to_string()],
-                vec!["eat".to_string(), "tea".to_string(), "ate".to_string(),],
-                vec!["tan".to_string(), "nat".to_string(),],
-            ]
-        )
-    }
+    // #[test]
+    // fn test_group_anagram() {
+    //     assert_eq!(
+    //         arrays::group_anagram::group_anagram::_group_anagrams(vec![
+    //             "eat".to_string(),
+    //             "tea".to_string(),
+    //             "tan".to_string(),
+    //             "ate".to_string(),
+    //             "nat".to_string(),
+    //             "bat".to_string()
+    //         ]),
+    //         vec![
+    //             vec!["bat".to_string()],
+    //             vec!["eat".to_string(), "tea".to_string(), "ate".to_string(),],
+    //             vec!["tan".to_string(), "nat".to_string(),],
+    //         ]
+    //     )
+    // }
 }
