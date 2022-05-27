@@ -4,7 +4,7 @@ fn main() {
     hm.insert(11, "eleven");
     hm.insert(22, "twelve");
 
-    let vec = vec![12,44,54,87,5];
+    let vec = vec![12, 44, 54, 87, 5];
 
     for (i, num) in hm.iter().enumerate() {
         println!("-> {:?},{:?} <--", i, num)
@@ -12,4 +12,5 @@ fn main() {
     for (i, num) in vec.iter().enumerate() {
         println!("-> {:?},{:?} <-", i, num)
     }
+
 }

@@ -6,10 +6,8 @@ mod test {
     #[test]
     fn test() {
         assert_eq!(
-            arrays::maximum_subarray::maximum_subarray::_max_sub_array(vec![
-                -2,1,-3,4,-1,2,1,-5,4
-            ]),
-            6
-        )
+            true,
+            arrays::contains_duplicate::contains_duplicate::_contains_duplicate(vec![12, 22, 22])
+        );
     }
 }
