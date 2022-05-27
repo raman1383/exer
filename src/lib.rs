@@ -4,10 +4,12 @@ mod test {
     use crate::*;
 
     #[test]
-    fn test() {
+    fn test_valid_anagram() {
+        let mut s = "ram".to_string();
+        let mut t = "mar".to_string();
         assert_eq!(
             true,
-            arrays::contains_duplicate::contains_duplicate::_contains_duplicate(vec![12, 22, 22])
+            arrays::valid_anagram::valid_anagram::_valid_anagram(&mut s, &mut t)
         );
     }
 }
