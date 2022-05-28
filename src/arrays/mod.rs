@@ -4,5 +4,6 @@ pub mod group_anagram;
 pub mod max_product_subarray;
 pub mod maximum_subarray;
 pub mod product_of_arr_except_self;
+pub mod top_k_frequent_elements;
 pub mod two_sum;
 pub mod valid_anagram;

@@ -37,4 +37,15 @@ mod test {
     //         ]
     //     )
     // }
+
+    // #[test]
+    // fn test_top_freq() {
+    //     assert_eq!(
+    //         arrays::top_k_frequent_elements::top_k_frequent_elements::_most_frequent(
+    //             [1, 1, 1, 2, 2, 3],
+    //             2
+    //         ),
+    //         vec![1, 2]
+    //     )
+    // }
 }
