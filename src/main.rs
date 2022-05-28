@@ -15,7 +15,7 @@ fn main() {
     println!("{:?}", a.as_bytes());
 
     println!(
-        "{:#?}",
+        "{:?}",
         arrays::group_anagram::group_anagram::_group_anagrams(vec![
             "ant".to_string(),
             "tan".to_string(),
@@ -23,5 +23,5 @@ fn main() {
             "od".to_string(),
             "ran".to_string()
         ])
-    )
+    );
 }
