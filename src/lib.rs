@@ -48,4 +48,13 @@ mod test {
             vec![1, 2]
         )
     }
+
+    #[test]
+    fn test_product_of_arr_exp_self() {
+        assert_eq!(arrays::product_of_array_except_self::product_of_array_except_self::_product_of_array_except_self(
+            vec![1,2,3,4],
+        ),
+        vec![24,12,8,6]
+    )
+    }
 }

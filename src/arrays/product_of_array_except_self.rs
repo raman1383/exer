@@ -6,12 +6,12 @@ pub mod product_of_array_except_self {
         let n = nums.len();
         let mut ret = vec![1; n];
         for i in (0..n).rev() {
-            ret[i] *= top_right;
-            top_right *= nums[i];
+            ret[i] = ret[i] * top_right;
+            top_right = top_right * nums[i];
         }
         for i in 0..n {
-            ret[i] *= bottom_left;
-            bottom_left *= nums[i];
+            ret[i] = ret[i] * bottom_left;
+            bottom_left = bottom_left * nums[i];
         }
         ret
     }
