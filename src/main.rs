@@ -1,6 +1,6 @@
 fn main() {
-    println!("Hello, world");
-
-    let ve = vec![1;12];
-    println!("{:?}", &ve)
+    let x = 1;
+    let x = x + 2;
+    let x = x * 2;
+    println!("Value of x: {}", x);
 }
