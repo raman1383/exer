@@ -1,3 +1,5 @@
+extern crate rusty_machine as rm;
+
 use std::process::ExitCode;
 
 fn main() -> ExitCode {
