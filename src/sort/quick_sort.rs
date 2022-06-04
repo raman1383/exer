@@ -1,1 +1,1 @@
-pub mod quick_sort {}
+pub fn quick_sort() {}
