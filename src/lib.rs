@@ -6,7 +6,7 @@ mod test {
     #[test]
     fn test_quick_sort() {
         assert_eq!(
-            sort::quick_sort::quick_sort(&mut [2, 1, 3, 5, 4, 6, 8, 7]),
+            sort::quick_sort::_quick_sort(&mut [2, 1, 3, 5, 4, 6, 8, 7]),
             [1, 2, 3, 4, 5, 6, 7, 8]
         );
     }

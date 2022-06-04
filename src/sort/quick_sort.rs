@@ -1,20 +1,20 @@
-#[allow(dead_code)]
+// #[allow(dead_code)]
 
-pub fn quick_sort<T: Ord>(arr: &mut [T]) -> &mut [T] {
+pub fn _quick_sort<T: Ord>(arr: &mut [T]) -> &mut [T] {
     let len = arr.len();
-    _quick_sort(arr, 0, (len - 1) as isize)
+    __quick_sort(arr, 0, (len - 1) as isize)
 }
 
-fn _quick_sort<T: Ord>(arr: &mut [T], low: isize, high: isize) -> &mut [T] {
+fn __quick_sort<T: Ord>(arr: &mut [T], low: isize, high: isize) -> &mut [T] {
     if low < high {
-        let p = partition(arr, low, high);
-        _quick_sort(arr, low, p - 1);
-        _quick_sort(arr, p + 1, high);
+        let p = _partition(arr, low, high);
+        __quick_sort(arr, low, p - 1);
+        __quick_sort(arr, p + 1, high);
     }
     arr
 }
 
-fn partition<T: Ord>(arr: &mut [T], low: isize, high: isize) -> isize {
+fn _partition<T: Ord>(arr: &mut [T], low: isize, high: isize) -> isize {
     let pivot = high as usize;
     let mut i = low - 1;
     let mut j = high;
