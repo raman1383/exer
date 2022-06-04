@@ -1,14 +1,15 @@
-pub fn quick_sort<T: Ord>(arr: &mut [T]) {
+pub fn quick_sort<T: Ord>(arr: &mut [T]) -> &mut [T] {
     let len = arr.len();
     _quick_sort(arr, 0, (len - 1) as isize)
 }
 
-fn _quick_sort<T: Ord>(arr: &mut [T], low: isize, high: isize) {
+fn _quick_sort<T: Ord>(arr: &mut [T], low: isize, high: isize) -> &mut [T] {
     if low < high {
         let p = partition(arr, low, high);
         _quick_sort(arr, low, p - 1);
         _quick_sort(arr, p + 1, high);
     }
+    arr
 }
 
 fn partition<T: Ord>(arr: &mut [T], low: isize, high: isize) -> isize {

@@ -3,7 +3,13 @@ mod sort;
 #[cfg(test)]
 mod test {
     use crate::*;
-
+    #[test]
+    fn test_quick_sort() {
+        assert_eq!(
+            sort::quick_sort::quick_sort(&mut [2, 1, 3, 5, 4, 6, 8, 7]),
+            [1, 2, 3, 4, 5, 6, 7, 8]
+        );
+    }
     #[test]
     fn test_valid_anagram() {
         let mut s = "ram".to_string();
