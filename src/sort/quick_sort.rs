@@ -1,5 +1,3 @@
-// #[allow(dead_code)]
-
 pub fn _quick_sort<T: Ord>(arr: &mut [T]) -> &mut [T] {
     let len = arr.len();
     __quick_sort(arr, 0, (len - 1) as isize)
