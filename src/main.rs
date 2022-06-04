@@ -1,3 +1,1 @@
-fn main() {
-    let _x = 10;
-}
+fn main() {}
