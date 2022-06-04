@@ -1,4 +1,5 @@
 mod arrays;
+mod sort;
 #[cfg(test)]
 mod test {
     use crate::*;
