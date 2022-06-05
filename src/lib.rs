@@ -1,5 +1,6 @@
 mod arrays;
 mod sort;
+mod tree;
 #[cfg(test)]
 mod test {
     use crate::*;
@@ -23,25 +24,6 @@ mod test {
         assert_eq!(vec![1, 2], arrays::two_sum::_two_sum(nums, 20))
     }
 
-    // #[test]
-    // fn test_group_anagram() {
-    //     assert_eq!(
-    //         arrays::group_anagram::group_anagram::_group_anagrams(vec![
-    //             "eat".to_string(),
-    //             "tea".to_string(),
-    //             "tan".to_string(),
-    //             "ate".to_string(),
-    //             "nat".to_string(),
-    //             "bat".to_string()
-    //         ]),
-    //         vec![
-    //             vec!["bat".to_string()],
-    //             vec!["eat".to_string(), "tea".to_string(), "ate".to_string(),],
-    //             vec!["tan".to_string(), "nat".to_string(),],
-    //         ]
-    //     )
-    // }
-
     #[test]
     fn test_top_freq() {
         assert_eq!(
@@ -56,5 +38,37 @@ mod test {
             arrays::product_of_array_except_self::_product_of_array_except_self(vec![1, 2, 3, 4],),
             vec![24, 12, 8, 6]
         )
+    }
+
+    #[test]
+    fn test_valid_sudoku() {
+        assert_eq!(
+            arrays::valid_sudoku::_valid_sudoku(vec![
+                vec!['8', '3', '.', '.', '7', '.', '.', '.', '.'],
+                vec!['6', '.', '.', '1', '9', '5', '.', '.', '.'],
+                vec!['.', '9', '8', '.', '.', '.', '.', '6', '.'],
+                vec!['8', '.', '.', '.', '6', '.', '.', '.', '3'],
+                vec!['4', '.', '.', '8', '.', '3', '.', '.', '1'],
+                vec!['7', '.', '.', '.', '2', '.', '.', '.', '6'],
+                vec!['.', '6', '.', '.', '.', '.', '2', '8', '.'],
+                vec!['.', '.', '.', '4', '1', '9', '.', '.', '5'],
+                vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
+            ]),
+            false
+        );
+        assert_eq!(
+            arrays::valid_sudoku::_valid_sudoku(vec![
+                vec!['5', '3', '.', '.', '7', '.', '.', '.', '.'],
+                vec!['6', '.', '.', '1', '9', '5', '.', '.', '.'],
+                vec!['.', '9', '8', '.', '.', '.', '.', '6', '.'],
+                vec!['8', '.', '.', '.', '6', '.', '.', '.', '3'],
+                vec!['4', '.', '.', '8', '.', '3', '.', '.', '1'],
+                vec!['7', '.', '.', '.', '2', '.', '.', '.', '6'],
+                vec!['.', '6', '.', '.', '.', '.', '2', '8', '.'],
+                vec!['.', '.', '.', '4', '1', '9', '.', '.', '5'],
+                vec!['.', '.', '.', '.', '8', '.', '.', '7', '9']
+            ]),
+            true
+        );
     }
 }
