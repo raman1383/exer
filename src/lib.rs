@@ -1,9 +1,18 @@
 mod arrays;
+mod dyn_pro;
 mod sort;
 mod tree;
 #[cfg(test)]
 mod test {
     use crate::*;
+    use test;
+    #[test]
+    fn test_fib() {
+        assert_eq!(
+            2971215073,
+            dyn_pro::fibonacci::_dynamic_programming_recursive_fibonacci(46)
+        )
+    }
     #[test]
     fn test_quick_sort() {
         assert_eq!(
