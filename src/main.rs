@@ -10,8 +10,8 @@ fn main() {
         }
     }
 
-    let person1 = NameLength::new("raman");
-    println!("{}  <-->  {}", person1.length, person1.name);
+    let person1 = NameLength::new("mia khalifa");
+    println!("{}  < - | - >  {}", person1.length, person1.name);
     person1.print();
 }
 
@@ -28,6 +28,6 @@ impl NameLength {
         }
     }
     fn print(&self) {
-        println!("{} is {} characters long", self.name, self.length)
+        println!("{} is {} characters long !!!", self.name, self.length)
     }
 }
