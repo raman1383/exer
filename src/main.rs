@@ -11,15 +11,10 @@ fn main() {
     println!("-------------");
 
     for mut i in 0..8 {
-        if i <= 4 {
-            for j in 0..i {
-                print!("#")
-            }
-        } else {
-            for j in 0..(8 - i) {
-                print!("#")
-            }
+        for j in 0..(4 - (4_i32 - i).abs()) {
+            print!("#")
         }
+
         print!("\n")
     }
 }
