@@ -2,6 +2,7 @@ mod arrays;
 mod dyn_pro;
 mod sort;
 mod tree;
+mod graph;
 #[cfg(test)]
 mod test {
     use crate::*;
