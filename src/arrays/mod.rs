@@ -2,6 +2,7 @@ pub mod best_time_to_buy_and_sell_stock;
 pub mod contains_duplicate;
 pub mod encode_and_decode_string;
 pub mod group_anagram;
+pub mod longest_consecutive_sequence;
 pub mod max_product_subarray;
 pub mod maximum_subarray;
 pub mod product_of_array_except_self;
