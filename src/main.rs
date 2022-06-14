@@ -1,3 +1,4 @@
 fn main() {
-    println!("hello")
+    let x = 10;
+    println!("hello {x} times ")
 }
