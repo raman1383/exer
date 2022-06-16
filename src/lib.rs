@@ -1,7 +1,7 @@
 mod arrays;
 mod dyn_pro;
 mod sort;
-mod search;
+pub mod search;
 mod tree;
 mod graph;
 #[cfg(test)]

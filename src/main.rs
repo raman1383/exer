@@ -1,5 +1,5 @@
 mod arrays;
 mod dyn_pro;
-mod search;
+pub mod search;
 mod sort;
 fn main() {}
