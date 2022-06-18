@@ -4,6 +4,7 @@ mod sort;
 pub mod search;
 mod tree;
 mod graph;
+mod cipher;
 #[cfg(test)]
 mod test {
     use crate::*;
