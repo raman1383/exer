@@ -121,10 +121,6 @@ pub fn decode(string: &str) -> Result<String, io::Error> {
     Ok(partitions.join(" "))
 }
 
-
-
-
-
 #[cfg(test)]
 mod tests {
     use super::*;
