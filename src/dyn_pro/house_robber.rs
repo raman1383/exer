@@ -18,5 +18,6 @@ mod test_super {
     #[test]
     fn test_rob() {
         assert_eq!(_rub(vec![2, 7, 9, 3, 1]), 12);
+        assert_eq!(_rub(vec![1, 2, 3, 1]), 4);
     }
 }
