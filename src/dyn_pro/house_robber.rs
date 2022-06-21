@@ -1,6 +1,5 @@
 pub fn _rub(nums: Vec<i32>) -> i32 {
-    let mut rob_1 = 0;
-    let mut rob_2 = 0;
+    let (mut rob_1, mut rob_2) = (0, 0);
 
     for n in nums {
         let temp = std::cmp::max(n + rob_1, rob_2);

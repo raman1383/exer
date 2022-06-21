@@ -8,8 +8,7 @@ pub fn _rob(nums: Vec<i32>) -> i32 {
 }
 
 fn _helper(nums: Vec<i32>) -> i32 {
-    let mut rob_1: i32 = 0;
-    let mut rob_2: i32 = 0;
+    let (mut rob_1, mut rob_2) = (0, 0);
     for n in nums {
         let new_rob = max(rob_1 + n, rob_2);
         rob_1 = rob_2;
