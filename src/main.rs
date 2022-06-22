@@ -1,5 +1,3 @@
-fn main() {}
-
 mod arrays;
 mod cipher;
 mod dyn_pro;
@@ -86,3 +84,5 @@ mod test {
         );
     }
 }
+
+fn main() {}
