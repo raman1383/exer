@@ -3,7 +3,7 @@ use std::collections::{BTreeMap, BinaryHeap};
 use std::ops::Add;
 
 #[allow(dead_code)]
-type Graph<V, E> = BTreeMap<V, BTreeMap<V, E>>;
+type Graph<V, E> = BTreeMap<V, BTreeMap<V,E>>;
 
 #[allow(dead_code)]
 pub fn dijkstra<V: Ord + Copy, E: Ord + Copy + Add<Output = E>>(
