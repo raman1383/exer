@@ -1,4 +1,3 @@
-// Definition for a binary tree node.
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
     pub val: i32,
@@ -8,7 +7,7 @@ pub struct TreeNode {
 
 impl TreeNode {
     #[inline]
-    pub fn _new(val: i32) -> Self {
+    pub fn new(val: i32) -> Self {
         TreeNode {
             val,
             left: None,
@@ -18,4 +17,6 @@ impl TreeNode {
 }
 use std::cell::RefCell;
 use std::rc::Rc;
-// pub fn invert_tree(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {}
+// impl Solution {
+//     pub fn invert_tree(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {}
+// }
