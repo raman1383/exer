@@ -13,3 +13,9 @@ pub fn unique_paths(m: i32, n: i32) -> i32 {
     }
     a[n][m]
 }
+
+#[test]
+fn test_unique_path() {
+    assert_eq!(unique_paths(3, 7), 28);
+    assert_eq!(unique_paths(3, 2), 3);
+}

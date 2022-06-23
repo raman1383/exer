@@ -1,6 +1,6 @@
 mod arrays;
 mod cipher;
-mod dyn_pro;
+pub mod dyn_pro;
 mod graph;
 pub mod search;
 mod sort;
