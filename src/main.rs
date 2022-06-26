@@ -9,6 +9,7 @@ mod tree;
 mod test {
     use crate::*;
     use test;
+
     #[test]
     fn test_fib() {
         assert_eq!(
